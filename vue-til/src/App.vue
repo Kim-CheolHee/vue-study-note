@@ -15,6 +15,7 @@ export default {
   },
   created() {
     var a = 10;
+    console.log("hi");
   },
 };
 </script>
