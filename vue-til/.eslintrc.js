@@ -17,6 +17,13 @@ module.exports = {
       {
         useTabs: false,
         endOfLine: "auto",
+        singleQuote: true,
+        semi: false,
+        tabWidth: 2,
+        trailingComma: 'all',
+        printWidth: 80,
+        bracketSpacing: true,
+        arrowParens: 'avoid',
       },
     ],
   },
