@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { setInterceptors } from '@/api/common/interceptors';
+import { setInterceptors } from './common/interceptors';
 
 // 액시오스 초기화 함수
 function createInstance() {
@@ -20,7 +20,7 @@ function loginUser(userData) {
   return instance.post('login', userData);
 }
 
-// 학습 노트 데이터 목록 조회 API
+// 학습 노트 데이터를 조회하는 API
 function fetchPosts() {
   return instance.get('posts');
 }

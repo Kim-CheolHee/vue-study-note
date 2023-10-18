@@ -3,7 +3,7 @@
     <div class="post-title">
       {{ postItem.title }}
     </div>
-    <div class="post-content">
+    <div class="post-contents">
       {{ postItem.contents }}
     </div>
     <div class="post-time">
