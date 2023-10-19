@@ -52,6 +52,7 @@ export default {
         });
         this.$router.push('/main');
       } catch (error) {
+        console.log(error);
         this.logMessage = error;
       }
     },
@@ -59,7 +60,6 @@ export default {
   async created() {
     const id = this.$route.params.id;
     const { data } = await fetchPost(id);
-    console.log(data);
     this.title = data.title;
     this.contents = data.contents;
   },
