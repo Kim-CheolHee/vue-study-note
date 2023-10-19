@@ -1,4 +1,4 @@
-// 로그인, 회원 가입 API를 호출하는 함수를 정의
+// 로그인, 회원 가입, (ex) 회원 탈퇴
 import { instance } from './index';
 
 // 회원가입 API
