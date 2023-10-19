@@ -54,7 +54,6 @@ export default {
           username: this.username,
           password: this.password,
         };
-        // store에 로그인 액션이 작동 후 router로 이동해야 하기 때문에 await 사용
         await this.$store.dispatch('LOGIN', userData);
         this.$router.push('/main');
       } catch (error) {
