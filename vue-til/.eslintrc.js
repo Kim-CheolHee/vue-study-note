@@ -1,7 +1,8 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true, // node 환경에서 사용할 것이다.
+    jest: true, // jest 환경에서 사용할 것이다.
   },
   extends: ["plugin:vue/essential", "@vue/prettier"],
   rules: {
