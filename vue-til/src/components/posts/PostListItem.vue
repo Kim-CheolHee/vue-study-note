@@ -29,8 +29,8 @@ export default {
       if (confirm('You want to delete it?')) {
         await deletePost(this.postItem._id);
         this.$emit('refresh');
-        console.log('deleteItem');
       }
+      // console.log('deleted');
     },
   },
 };
