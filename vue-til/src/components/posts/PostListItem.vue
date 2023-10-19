@@ -24,18 +24,12 @@ export default {
       required: true,
     },
   },
-  // filters: {
-  //   formatDate(value) {
-  //     return new Date(value);
-  //   },
-  // },
   methods: {
     async deleteItem() {
       if (confirm('You want to delete it?')) {
         await deletePost(this.postItem._id);
         this.$emit('refresh');
       }
-      // console.log('deleted');
     },
     routeEditPage() {
       const id = this.postItem._id;
